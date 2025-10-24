@@ -56,10 +56,16 @@ public class DateTimeFunctions {
 	 */
 	public static String getTimeDifference(LocalDate date1, LocalDate date2) {
 		//YOUR CODE STARTS HERE
+
+        // Get time difference between dates
 		Period difference = date1.until(date2);
+
+        // Initialise number of years, months and years
         int years = difference.getYears();
         int months = difference.getMonths();
         int days = difference.getDays();
+
+        // Return years, months and days in string format
         return "Years-" + years + ":Months-" + months + ":Days-" + days;
 
 		//YOUR CODE ENDS HERE
